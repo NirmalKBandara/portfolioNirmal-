@@ -1,0 +1,78 @@
+:root {
+    --color01: hsl(202, 31%, 10%);   /* Blue */
+    --color02: hsl(203, 61%, 10%); /* Green */
+    --color03: hsl(194, 88%, 47%);
+    --color04: hsl(87, 16%, 89%);
+    --color05: hsl(265, 75%, 97%);
+}
+*{
+    text-decoration: none;
+}
+body{
+    background: var(--color02);
+    padding: 0;
+    margin: 0;
+}
+.navbar{
+    display: flex;
+    background: rgba(255, 255, 255, 0);
+    color: var(--color05);
+    justify-content: space-evenly;
+    height: 10vh;
+    align-items: center;
+}
+.box01{
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+.box01 a:hover{
+    color: var(--color03);
+}
+.box00 h1{
+    margin: 0;
+}
+.box01 a{
+    color: var(--color05);
+}
+.personal{
+    height: 75vh;
+
+}
+
+
+
+html {
+    font-size: 16px; /* 1rem = 16px */
+}
+  
+  /* Extra Small Devices (Phones, <576px) */
+  @media (max-width: 575px) {
+    p { font-size: 0.875rem; } /* 14px */
+    h1 { font-size: 1.75rem; } /* 28px */
+  }
+  
+  /* Small Devices (Phones, ≥576px) */
+  @media (min-width: 576px) {
+    p { font-size: 1rem; } /* 16px */
+    h1 { font-size: 2rem; } /* 32px */
+  }
+  
+  /* Medium Devices (Tablets, ≥768px) */
+  @media (min-width: 768px) {
+    p { font-size: 1.125rem; } /* 18px */
+    h1 { font-size: 2.5rem; } /* 40px */
+  }
+  
+  /* Large Devices (Laptops, ≥992px) */
+  @media (min-width: 992px) {
+    p { font-size: 1.25rem; } /* 20px */
+    h1 { font-size: 3rem; } /* 48px */
+  }
+  
+  /* Extra Large Devices (Desktops, ≥1200px) */
+  @media (min-width: 1200px) {
+    p { font-size: 1.375rem; } /* 22px */
+    h1 { font-size: 3.5rem; } /* 56px */
+  }
+  
