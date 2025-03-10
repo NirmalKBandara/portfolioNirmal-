@@ -37,8 +37,16 @@ body{
 }
 .personal{
     height: 75vh;
-
+    display: flex;
 }
+.box10{
+    display: flex;
+    flex-direction: column;
+}
+.box11{
+    
+}
+
 
 
 
