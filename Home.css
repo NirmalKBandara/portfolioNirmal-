@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Quicksand:wght@300..700&family=Ysabeau+SC:wght@1..1000&display=swap');
+
 :root {
     --color01: hsl(202, 31%, 10%);   /* Blue */
     --color02: hsl(203, 61%, 10%); /* Green */
@@ -9,11 +11,13 @@
     text-decoration: none;
 }
 body{
-    background: var(--color02);
+    background-image: url(HomeImages/image00.jpg);
     padding: 0;
     margin: 0;
 }
 .navbar{
+    position: relative;
+    top: 1vh;
     display: flex;
     background: rgba(255, 255, 255, 0);
     color: var(--color05);
@@ -36,6 +40,7 @@ body{
     color: var(--color05);
 }
 .personal{
+
     background-image: url(HomeImages/image02.png);
     background-size: 100%;
     background-position-x: 10dvw;
@@ -46,22 +51,61 @@ body{
     display: flex;
 }
 .box10{
+    position: relative;
     padding-top: 5%;
     padding-left: 10%; 
     width: 40vw;
+    height: 50vh;
     color: var(--color05);
     display: flex;
     flex-direction: column;
 }
+.box01 p, .box10 {
+    font-family: 'Times New Roman', Times, serif;
+}
+.box00 h1{
+    font-family: Cinzel;
+}
+.box10 h1{
+    font-family:'Times New Roman', Times, serif;
+}
+#text00{
+    position: relative;
+    top: -5%;
+}
+#text01{
+    position: relative;
+    top: -5%;
+    font-size: 1.75rem;
+}
+.blurbox{
+    background-color: hsla(0, 0%, 50%, 0.114);
+    width: 50vw;
+    height: 30vh;
+    left: 5vw;
+    position: absolute;
+    top: 16%;
+    border-radius: 100px;
+    filter: blur(2px);
+    border: 1px solid wheat;
+
+}
 .button00{
     padding: 2%;
     margin:2% 0 0 0;
-    border: 2px solid var(--color03);
+    border: 2px double wheat;
     border-radius: 1000px;
-
     width: 25%;
+    font-size: 1.5rem;
+    color: var(--color04);
+    background-color: hsla(0, 0%, 50%, 0.114);
 }
-
+.buttons{
+    position: relative;
+    top: -5%;
+    display: flex;
+    gap: 5%;
+}
 
 
 
