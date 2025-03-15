@@ -10,6 +10,8 @@
 *{
     text-decoration: none;
     outline: 1px solid rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;
 }
 body{
     background-image: url(HomeImages/image00.jpg);
@@ -48,6 +50,7 @@ body{
     width: 100vw;
     height: 90vh;
     display: flex;
+    flex-direction: column;
 }
 .box10{
     position: relative;
@@ -55,30 +58,30 @@ body{
     top: 20%;
     width: 40vw;
     height: 30vh;
-    padding: 1%;
+    padding: 1.25%;
+    justify-content: space-evenly;
     color: var(--color05);
     display: flex;
     flex-direction: column;
+    border-radius: 80px;
 }
 .box01 p, .box10 {
     font-family: 'Times New Roman', Times, serif;
 }
 .box00 h1{
-    font-family: Cinzel;
+    font-family: 'Times New Roman', Times, serif;
 }
 .box10 h1{
     font-family:'Times New Roman', Times, serif;
 }
 #text00{
     position: relative;
-    top: -5%;
 }
 #text01{
     position: relative;
-    top: -5%;
     font-size: 1.75rem;
 }
-.blurbox{
+/* .blurbox{
     background-color: hsla(0, 0%, 50%, 0.114);
     width: 50vw;
     height: 30vh;
@@ -88,20 +91,23 @@ body{
     border-radius: 100px;
     filter: blur(2px);
     border: 1px solid wheat;
-
-}
+} */
 .button00{
-    padding: 2%;
-    margin:2% 0 0 0;
+    padding: 0 5%;
     border: 2px double wheat;
     border-radius: 1000px;
-    width: 25%;
     font-size: 1.5rem;
     color: var(--color04);
     background-color: hsla(0, 0%, 50%, 0.114);
 }
 .buttons{
+    position: relative;
+    left: 10%;
+    top: 20%;
+    width: 20%;
+    height: 7.5%;
     display: flex;
+    justify-content: space-evenly;
 }
 
 html {
