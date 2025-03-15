@@ -9,6 +9,7 @@
 }
 *{
     text-decoration: none;
+    outline: 1px solid rgb(255, 255, 255);
 }
 body{
     background-image: url(HomeImages/image00.jpg);
@@ -17,7 +18,6 @@ body{
 }
 .navbar{
     position: relative;
-    top: 1vh;
     display: flex;
     background: rgba(255, 255, 255, 0);
     color: var(--color05);
@@ -40,7 +40,6 @@ body{
     color: var(--color05);
 }
 .personal{
-
     background-image: url(HomeImages/image02.png);
     background-size: 100%;
     background-position-x: 10dvw;
@@ -52,10 +51,11 @@ body{
 }
 .box10{
     position: relative;
-    padding-top: 5%;
-    padding-left: 10%; 
+    left: 10%;
+    top: 20%;
     width: 40vw;
-    height: 50vh;
+    height: 30vh;
+    padding: 1%;
     color: var(--color05);
     display: flex;
     flex-direction: column;
@@ -82,9 +82,9 @@ body{
     background-color: hsla(0, 0%, 50%, 0.114);
     width: 50vw;
     height: 30vh;
-    left: 5vw;
+    left: -15%;
+    padding: 1.25%;
     position: absolute;
-    top: 16%;
     border-radius: 100px;
     filter: blur(2px);
     border: 1px solid wheat;
@@ -101,14 +101,8 @@ body{
     background-color: hsla(0, 0%, 50%, 0.114);
 }
 .buttons{
-    position: relative;
-    top: -5%;
     display: flex;
-    gap: 5%;
 }
-
-
-
 
 html {
     font-size: 16px; /* 1rem = 16px */
