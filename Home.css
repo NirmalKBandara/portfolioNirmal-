@@ -1,12 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Quicksand:wght@300..700&family=Ysabeau+SC:wght@1..1000&display=swap');
-
-:root {
-    --color01: hsl(202, 31%, 10%);   /* Blue */
-    --color02: hsl(203, 61%, 10%); /* Green */
-    --color03: hsl(194, 88%, 47%);
-    --color04: hsl(87, 16%, 89%);
-    --color05: hsl(265, 75%, 97%);
-}
 *{
     text-decoration: none;
     outline: 1px solid rgb(255, 255, 255);
@@ -14,104 +6,7 @@
     padding: 0;
 }
 body{
-    background-image: url(HomeImages/image00.jpg);
-    padding: 0;
-    margin: 0;
-}
-.navbar{
-    position: relative;
-    display: flex;
-    background: rgba(255, 255, 255, 0);
-    color: var(--color05);
-    justify-content: space-evenly;
-    height: 10vh;
-    align-items: center;
-}
-.box01{
-    display: flex;
-    align-items: center;
-    gap: 100px;
-}
-.box01 a:hover{
-    color: var(--color03);
-}
-.box00 h1{
-    margin: 0;
-}
-.box01 a{
-    color: var(--color05);
-}
-.personal{
-    background-image: url(HomeImages/image02.png);
-    background-size: 100%;
-    background-position-x: 10dvw;
-    background-position-y: -10dvh;
-    background-repeat: no-repeat;
-    width: 100vw;
-    height: 90vh;
-    display: flex;
-    flex-direction: column;
-}
-.box10{
-    position: relative;
-    left: 10%;
-    top: 20%;
-    width: 40vw;
-    height: 30vh;
-    padding: 1.25%;
-    justify-content: space-evenly;
-    color: var(--color05);
-    display: flex;
-    flex-direction: column;
-    border-radius: 80px;
-}
-.box01 p, .box10 {
-    font-family: 'Times New Roman', Times, serif;
-}
-.box00 h1{
-    font-family: 'Times New Roman', Times, serif;
-}
-.box10 h1{
-    font-family:'Times New Roman', Times, serif;
-}
-#text00{
-    position: relative;
-}
-#text01{
-    position: relative;
-    font-size: 1.75rem;
-}
-/* .blurbox{
-    background-color: hsla(0, 0%, 50%, 0.114);
-    width: 50vw;
-    height: 30vh;
-    left: -15%;
-    padding: 1.25%;
-    position: absolute;
-    border-radius: 100px;
-    filter: blur(2px);
-    border: 1px solid wheat;
-} */
-.button00{
-    padding: 0 5%;
-    border: 2px double wheat;
-    border-radius: 1000px;
-    font-size: 1.5rem;
-    color: var(--color04);
-    background-color: hsla(0, 0%, 50%, 0.114);
-}
-.buttons{
-    position: relative;
-    left: 10%;
-    top: 20%;
-    width: 20%;
-    height: 7.5%;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-html {
-    font-size: 16px; /* 1rem = 16px */
+    background-color: ;
 }
   
   /* Extra Small Devices (Phones, <576px) */
