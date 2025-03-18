@@ -4,7 +4,8 @@
   outline: 1px solid hsla(0, 0%, 0%, 0);
   margin: 0;
   padding: 0;
-  font-family: mos;
+  font-family: t;
+  color: black;
 }
 body{
   background-color: #e4e5e0;
@@ -58,16 +59,7 @@ body{
   border-radius: 100px;
 
 }
-.content .text .socialIcons{
-  position: relative;
-  display: flex;
-  top: 25%;
-  gap: 20%;
-  left: -30%;
-}
-.content .text .socialIcons a{
-  font-size: 3.5rem;
-}
+
 .content .image{
   width: 50vw;
   display: flex;
@@ -84,6 +76,98 @@ body{
   background-size: 100%;
   outline: 10px solid ;
 
+}
+.about{
+  height: 100vh;
+}
+.skills{
+  height: 100vh;
+}
+.works{
+  height: 100vh;
+}
+.contact{
+  height: 60vh;
+  display: flex;
+  background-color: white;
+}
+.contact .email{
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5%;
+  margin: 2.5%;
+  align-items: center;
+}
+.contact .email .name{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 20%;
+}
+.contact .email .name .first{
+  display: flex;
+  flex-direction: column;
+  width: 47.5%;
+  gap: 10%;
+}
+.contact .email .name .first input{
+  height: 40%;
+}
+.contact .email .name .last{
+  display: flex;
+  flex-direction: column;
+  gap: 10%;
+  width: 47.5%;
+}
+.contact .email .name .last input{
+  height: 40%;
+}
+.contact .email .emailBox{
+  display: flex;
+  flex-direction: column;
+  gap: 10%;
+  width: 100%;
+  height: 20%;
+}
+.contact .email .emailBox input{
+  height: 40%;
+}
+.contact .email .mobile{
+  display: flex;
+  flex-direction: column;
+  gap: 10%;
+  width: 100%;
+  height: 20%;
+}
+.contact .email .mobile input{
+  height: 40%;
+}
+.contact .email .message{
+  display: flex;
+  flex-direction: column;
+  gap: 10%;
+  width: 100%;
+  height: 30%;
+}
+.contact .email .message input{
+  height: 100%;
+}
+.contact .email button{
+  display: flex;
+  position: relative;
+  justify-items: left;
+  cursor: pointer;
+}
+.contact .socialIcons{
+  position: relative;
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.contact .socialIcons i{
+  font-size: 3.5rem;
 }
 /* For effects */
 
