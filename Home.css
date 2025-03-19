@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Quicksand:wght@300..700&family=Ysabeau+SC:wght@1..1000&display=swap');
 *{
   text-decoration: none;
-  outline: 1px solid hsla(0, 0%, 0%, 0);
+  outline: 1px solid rgba(0, 0, 0, 0);
   margin: 0;
   padding: 0;
-  font-family: t;
+  font-family: monospace;
   color: black;
+
 }
 body{
   background-color: #e4e5e0;
@@ -16,8 +16,8 @@ body{
   align-items: center;
   height: 10vh;
 }
-.navbar .left h1{
-
+.navbar .left p{
+  font-size: 3rem;
 }
 .navbar .right{
   display: flex;
@@ -156,18 +156,48 @@ body{
 .contact .email button{
   display: flex;
   position: relative;
-  justify-items: left;
+  align-self: flex-end;
   cursor: pointer;
+  width: 12.5%;
+  padding: 1.25% 0;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.75rem;
+
 }
 .contact .socialIcons{
   position: relative;
   width: 50vw;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+}
+.contact .socialIcons .icons{
+  height: 60%;
+  display: flex;
+}
+.contact .socialIcons .icons .inside{
+  display: flex;
+  flex-direction: column;
+  width: 25vw;
+  justify-content: center;
+  gap: 25%;
+
+}
+.contact .socialIcons .icons .data{
+  display: flex;
+  justify-content: center;
+  gap: 10%;
 }
 .contact .socialIcons i{
-  font-size: 3.5rem;
+  font-size: 5rem;
+}
+.contact .socialIcons a{
+  width: 5rem;
+  height: 5rem;
+}
+.contact .socialIcons .foot{
+  height: 40%;
+  background-color: black;
 }
 /* For effects */
 
@@ -199,6 +229,6 @@ body{
 
 /* Extra Large Devices (Desktops, ≥1200px) */
 @media (min-width: 1200px) {
-  p, a { font-size: 1.755rem; } /* 22px */
+  p, a { font-size: 1.75rem; } /* 22px */
   h1 { font-size: 3.5rem; } /* 56px */
 }
