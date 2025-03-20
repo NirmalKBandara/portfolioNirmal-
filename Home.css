@@ -57,7 +57,7 @@ body{
   width: 10vw;
   height: 5vh;
   border-radius: 100px;
-
+  
 }
 
 .content .image{
@@ -70,18 +70,114 @@ body{
   width: 30vmax;
   height: 30vmax;
   border-radius: 60% 40% 60% 40% / 40% 60% 40% 60%;
-  background-image: url(HomeImages/Image01.jpg);
+  background-image: url(HomeImages/image01.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
   outline: 10px solid ;
-
 }
 .about{
   height: 100vh;
 }
 .skills{
-  height: 100vh;
+  height: 400vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.skills .box{
+  height: 30vh;
+  width: 90%;
+  display: flex;
+}
+.skills .box .left{
+  width: 20%;
+  margin: 1%;  
+  height: 90%;
+  border-radius: 50px;
+}
+.skills .box .right{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10%;
+  width: 80%;
+  margin: 1%;  
+  height: 90%;
+  border-radius: 50px;
+}
+.skills .box #box00{
+  background-image: url(HomeImages/Teaching.png);
+  background-size: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.skills .box #box01{
+  background-image: url(HomeImages/Maths.png);
+  background-size: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.skills .box #box02{
+  background-image: url(HomeImages/Java.png);
+  background-size: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.skills .box #box03{
+  background-image: url(HomeImages/python.png);
+  background-size: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.skills .box #box04{
+  background-image: url(HomeImages/C.png);
+  background-size: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.skills .box #box05{
+  background-image: url(HomeImages/C++.png);
+  background-size: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.skills .box #box06{
+  background-image: url(HomeImages/HTML.png);
+  background-size: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.skills .box #box07{
+  background-image: url(HomeImages/CSS.png);
+  background-size: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.skills .box #box08{
+  background-image: url(HomeImages/JS.png);
+  background-size: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.skills .box #box09{
+  background-image: url(HomeImages/PHP.png);
+  background-size: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.skills .box #box0A{
+  background-image: url(HomeImages/MySQL.png);
+  background-size: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.skills .box #box0B{
+  background-image: url(HomeImages/MongoDB.png);
+  background-size: 30%;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .works{
   height: 100vh;
