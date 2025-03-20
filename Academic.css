@@ -3,7 +3,7 @@
     outline: 1px solid hsla(0, 0%, 0%, 1);
     margin: 0;
     padding: 0;
-    font-family: t;
+    font-family: monospace;
     color: black;
 }
 body{
@@ -21,6 +21,30 @@ body{
     display: flex;
     gap: 10%;
 }
+.pdf-button {
+  display: inline-block;
+  padding: 12px 24px;
+  background: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.pdf-button:hover {
+  background: #0056b3;
+}
+.pdf-container {
+  border: 2px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+
+
+
 /* For effects */
 
 /* For colors */
