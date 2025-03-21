@@ -18,7 +18,13 @@ body{
 }
 .navbar .left p{
   font-size: 3rem;
+  /* margin-inline: auto;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid;
+  animation: typing 3s steps(11) forwards, blinking 1s step-end infinite; */
 }
+
 .navbar .right{
   display: flex;
   gap: 5rem;
@@ -74,7 +80,8 @@ body{
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
-  outline: 10px solid ;
+  outline:10px hsl(0, 0%, 10%) solid;
+  
 }
 .about{
   height: 100vh;
@@ -268,7 +275,7 @@ body{
   flex-direction: column;
 }
 .contact .socialIcons .icons{
-  height: 60%;
+  height: 30%;
   display: flex;
 }
 .contact .socialIcons .icons .inside{
@@ -292,11 +299,30 @@ body{
   height: 5rem;
 }
 .contact .socialIcons .foot{
-  height: 40%;
+  height: 70%;
   background-color: black;
 }
 /* For effects */
-
+#typing{
+  max-width: max-content;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid;
+  animation: typing 3s steps(30) forwards, blinking 1s step-end infinite;
+}
+@keyframes typing{
+  from{
+    width:0 ;
+  }
+  to{
+    width: 100%;
+  }
+}
+@keyframes blinking{
+    50%{
+      border-color: transparent;
+    }
+}
 /* For colors */
 
 /* Extra Small Devices (Phones, <576px) */
