@@ -1,50 +1,95 @@
 *{
-    text-decoration: none;
-    outline: 1px solid hsla(0, 0%, 0%, 1);
-    margin: 0;
-    padding: 0;
-    font-family: monospace;
-    color: black;
+  text-decoration: none;
+  outline: 1px solid hsla(0, 0%, 0%, 0);
+  margin: 0;
+  padding: 0;
+  font-family: monospace;
+  color: black;
 }
 body{
-    background-color: #e4e5e0;
+  background-color: #e4e5e0;
 }
 .navbar{
-    display: flex;
-    align-items: center;
-    height: 10vh;
-    justify-content: space-evenly;
+  display: flex;
+  align-items: center;
+  height: 10vh;
+  justify-content: space-evenly;
 }
 .navbar .sem{
-    position: relative;
-    left: -10%;
+  position: relative;
+  left: -10%;
+  display: flex;
+  gap: 10%;
+}
+.semData{
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: 100vw;
+}
+.semData .modules{
+  display: flex;
+  justify-content:left;
+  padding-left: 2%;
+  align-items: center;
+  height: 10vh;
+  gap: 4%;
+}
+.semData .detail{
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
+.semData .detail .module{
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  h1{
     display: flex;
-    gap: 10%;
+    align-items: last baseline;
+    padding-left: 2%;
+  }
 }
-.pdf-button {
-  display: inline-block;
-  padding: 12px 24px;
-  background: #007bff;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 6px;
-  font-weight: bold;
-  transition: background 0.3s;
+.semData .detail .module .pdfs{
+  display: flex;
+  flex-direction: column;
+  height: auto;
 }
+.semData .detail .module .pdfs .row{
+  display: flex;
+  height: 15vh;
+  gap: 2%;
 
-.pdf-button:hover {
-  background: #0056b3;
 }
-.pdf-container {
-  border: 2px solid #ddd;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-  overflow: hidden;
+.semData .detail .module .pdfs .row #pdf{
+  width: 10%;
+  height: 100%;
+  background-image: url(Images/PDF.png);
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position: center;
 }
-
-
-
-
+.semData .detail .module .pdfs .row #name{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 15%;
+  height: 100%;
+  button{
+    border-radius: 100px;
+    width: 60%;
+    height: 30%;
+  }
+}
+.semData .detail .module .pdfs .row #contain{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  width: 25%;
+  height: 100%;
+}
 /* For effects */
 
 /* For colors */
