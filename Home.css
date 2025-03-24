@@ -1,6 +1,6 @@
 *{
   text-decoration: none;
-  outline: 1px solid rgba(0, 0, 0, 1);
+  outline: 1px solid rgba(0, 0, 0, 0);
   margin: 0;
   padding: 0;
   font-family: monospace;
@@ -83,9 +83,58 @@ body{
   outline:10px hsl(0, 0%, 10%) solid;
   
 }
+
 .about{
+  display: flex;
   height: 100vh;
+  .photo{
+    width: 40%;
+    .title{
+      height: 10%;
+      border-radius: 100px;
+      margin: 10px;
+    }
+    .photos{
+        border-radius: 100px;
+        height: 70%;
+        margin: 10px;
+    }
+    .discription{
+      height: 20%;
+      border-radius: 100px;
+      margin: 10px;
+
+    }
+  }
+  .details{
+    width: 60%;
+    .box1{
+      height: 30%;
+      border-radius: 100px;
+      margin: 10px;
+    }
+    .box2{
+      height: 40%;
+      display: flex;
+      .box21{
+        width: 40%;
+        border-radius: 100px;
+        margin: 10px;
+      }
+      .box22{
+        width: 60%;
+        border-radius: 100px;
+        margin: 10px;
+      }
+    }
+    .box3{
+      height: 30%;
+      border-radius: 100px;
+      margin: 10px;
+    }
+  }
 }
+
 .skills{
   height: 400vh;
   display: flex;
