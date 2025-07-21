@@ -4,9 +4,9 @@
 This is my personal portfolio website built using basic **HTML**, **CSS**, and **JavaScript**.
 
 ## 🔧 Tech Used
-- [HTML]() for structure.  
-- [CSS]() for styling and layout.  
-- [JavaScript]() for interactivity.  
+- [HTML](index.html) for structure.  
+- [CSS](script.js) for styling and layout.  
+- [JavaScript](styles.css) for interactivity.  
 - Font Awesome for icons.  
 
 ## 💡 Notes
