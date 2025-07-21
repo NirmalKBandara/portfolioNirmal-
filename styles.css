@@ -282,6 +282,7 @@ html {
 }
 
 .scroll-indicator {
+    display: none;
     position: absolute;
     bottom: 2rem;
     left: 50%;
