@@ -1,5 +1,3 @@
-// Professional Portfolio JavaScript
-
 // Global Variables
 let isMenuOpen = false;
 let currentSection = 'home';
@@ -21,6 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
     initializeAnimations();
     initializeSmoothScrolling();
     initializeThemeToggle();
+    initializeFloatingThemeToggle(); 
 });
 
 // Navigation Functions
@@ -84,7 +83,7 @@ function initializeScrollEffects() {
         updateActiveNavOnScroll();
         
         // Animate elements on scroll
-        animateOnScroll();
+        // animateOnScroll();                       //Still in progress
         
         lastScrollTop = scrollTop;
     });
@@ -500,4 +499,58 @@ function updateThemeIcon(theme) {
     } else {
         themeIcon.className = 'fas fa-sun';
     }
+}
+
+// Floating theme toggle functionality
+function initializeFloatingThemeToggle() {
+    const floatingToggle = document.getElementById('floatingThemeToggle');
+    const floatingIcon = document.getElementById('floatingThemeIcon');
+    const heroSection = document.getElementById('home');
+    
+    // Show/hide floating toggle based on hero section visibility
+    function handleScroll() {
+        const heroRect = heroSection.getBoundingClientRect();
+        const isHeroVisible = heroRect.bottom > 100;
+        
+        if (isHeroVisible) {
+            floatingToggle.classList.remove('visible');
+        } else {
+            floatingToggle.classList.add('visible');
+        }
+    }
+    
+    // Update floating icon
+    function updateFloatingIcon(theme) {
+        if (theme === 'dark') {
+            floatingIcon.className = 'fas fa-moon';
+        } else {
+            floatingIcon.className = 'fas fa-sun';
+        }
+    }
+    
+    // Click handler for floating toggle
+    floatingToggle.addEventListener('click', () => {
+        const body = document.body;
+        const currentTheme = body.getAttribute('data-theme');
+        const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+        
+        body.setAttribute('data-theme', newTheme);
+        localStorage.setItem('theme', newTheme);
+        updateThemeIcon(newTheme);
+        updateFloatingIcon(newTheme);
+        
+        // Animation
+        floatingToggle.style.transform = 'translateY(-5px) scale(0.9)';
+        setTimeout(() => {
+            floatingToggle.style.transform = 'translateY(0) scale(1)';
+        }, 150);
+    });
+    
+    // Initialize floating icon
+    const currentTheme = document.body.getAttribute('data-theme') || 'light';
+    updateFloatingIcon(currentTheme);
+    
+    // Add scroll listener
+    window.addEventListener('scroll', handleScroll);
+    handleScroll(); // Initial check
 }
