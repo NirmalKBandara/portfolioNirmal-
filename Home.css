@@ -1,0 +1,405 @@
+*{
+  text-decoration: none;
+  outline: 1px solid rgba(0, 0, 0, 0);
+  margin: 0;
+  padding: 0;
+  font-family: monospace;
+  color: black;
+
+}
+body{
+  background-color: #e4e5e0;
+}
+.navbar{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 10vh;
+}
+.navbar .left p{
+  font-size: 3rem;
+  /* margin-inline: auto;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid;
+  animation: typing 3s steps(11) forwards, blinking 1s step-end infinite; */
+}
+
+.navbar .right{
+  display: flex;
+  gap: 5rem;
+}
+.content{
+  display: flex;
+  height: 90vh;
+}
+.content .text{
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.content .text .box{
+  position: relative;
+  width: 40vmax;
+  height: 15vmax;
+  padding: 5%;
+  top: -10%;
+  border-radius: 10vmin;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: left;
+}
+.content .text .buttons{
+  position: relative;
+  top: -10%;
+  left: -20%;
+  display: flex;
+  gap: 20%;
+}
+.content .text .buttons button{
+  width: 10vw;
+  height: 5vh;
+  border-radius: 100px;
+  
+}
+
+.content .image{
+  width: 50vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content .image .circle{
+  width: 30vmax;
+  height: 30vmax;
+  border-radius: 60% 40% 60% 40% / 40% 60% 40% 60%;
+  background-image: url(HomeImages/image01.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  outline:10px hsl(0, 0%, 10%) solid;
+  
+}
+
+.about{
+  display: flex;
+  height: 100vh;
+  .photo{
+    width: 40%;
+    .title{
+      height: 10%;
+      border-radius: 100px;
+      margin: 10px;
+    }
+    .photos{
+        border-radius: 100px;
+        height: 70%;
+        margin: 10px;
+    }
+    .discription{
+      height: 20%;
+      border-radius: 100px;
+      margin: 10px;
+
+    }
+  }
+  .details{
+    width: 60%;
+    .box1{
+      height: 30%;
+      border-radius: 100px;
+      margin: 10px;
+    }
+    .box2{
+      height: 40%;
+      display: flex;
+      .box21{
+        width: 40%;
+        border-radius: 100px;
+        margin: 10px;
+      }
+      .box22{
+        width: 60%;
+        border-radius: 100px;
+        margin: 10px;
+      }
+    }
+    .box3{
+      height: 30%;
+      border-radius: 100px;
+      margin: 10px;
+    }
+  }
+}
+
+.skills{
+  height: 400vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.skills .box{
+  height: 30vh;
+  width: 90%;
+  display: flex;
+}
+.skills .box .left{
+  width: 20%;
+  margin: 1%;  
+  height: 90%;
+  border-radius: 50px;
+}
+.skills .box .right{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10%;
+  width: 80%;
+  margin: 1%;  
+  height: 90%;
+  border-radius: 50px;
+}
+.skills .box #box00{
+  background-image: url(HomeImages/Teaching.png);
+  background-size: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.skills .box #box01{
+  background-image: url(HomeImages/Maths.png);
+  background-size: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.skills .box #box02{
+  background-image: url(HomeImages/Java.png);
+  background-size: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.skills .box #box03{
+  background-image: url(HomeImages/python.png);
+  background-size: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.skills .box #box04{
+  background-image: url(HomeImages/C.png);
+  background-size: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.skills .box #box05{
+  background-image: url(HomeImages/C++.png);
+  background-size: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.skills .box #box06{
+  background-image: url(HomeImages/HTML.png);
+  background-size: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.skills .box #box07{
+  background-image: url(HomeImages/CSS.png);
+  background-size: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.skills .box #box08{
+  background-image: url(HomeImages/JS.png);
+  background-size: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.skills .box #box09{
+  background-image: url(HomeImages/PHP.png);
+  background-size: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.skills .box #box0A{
+  background-image: url(HomeImages/MySQL.png);
+  background-size: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.skills .box #box0B{
+  background-image: url(HomeImages/MongoDB.png);
+  background-size: 30%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.works{
+  height: 100vh;
+}
+.contact{
+  height: 60vh;
+  display: flex;
+  background-color: white;
+}
+.contact .email{
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5%;
+  margin: 2.5%;
+  align-items: center;
+}
+.contact .email .name{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 20%;
+}
+.contact .email .name .first{
+  display: flex;
+  flex-direction: column;
+  width: 47.5%;
+  gap: 10%;
+}
+.contact .email .name .first input{
+  height: 40%;
+}
+.contact .email .name .last{
+  display: flex;
+  flex-direction: column;
+  gap: 10%;
+  width: 47.5%;
+}
+.contact .email .name .last input{
+  height: 40%;
+}
+.contact .email .emailBox{
+  display: flex;
+  flex-direction: column;
+  gap: 10%;
+  width: 100%;
+  height: 20%;
+}
+.contact .email .emailBox input{
+  height: 40%;
+}
+.contact .email .mobile{
+  display: flex;
+  flex-direction: column;
+  gap: 10%;
+  width: 100%;
+  height: 20%;
+}
+.contact .email .mobile input{
+  height: 40%;
+}
+.contact .email .message{
+  display: flex;
+  flex-direction: column;
+  gap: 10%;
+  width: 100%;
+  height: 30%;
+}
+.contact .email .message input{
+  height: 100%;
+}
+.contact .email button{
+  display: flex;
+  position: relative;
+  align-self: flex-end;
+  cursor: pointer;
+  width: 12.5%;
+  padding: 1.25% 0;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.75rem;
+
+}
+.contact .socialIcons{
+  position: relative;
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+}
+.contact .socialIcons .icons{
+  height: 30%;
+  display: flex;
+}
+.contact .socialIcons .icons .inside{
+  display: flex;
+  flex-direction: column;
+  width: 25vw;
+  justify-content: center;
+  gap: 25%;
+
+}
+.contact .socialIcons .icons .data{
+  display: flex;
+  justify-content: center;
+  gap: 10%;
+}
+.contact .socialIcons i{
+  font-size: 5rem;
+}
+.contact .socialIcons a{
+  width: 5rem;
+  height: 5rem;
+}
+.contact .socialIcons .foot{
+  height: 70%;
+  background-color: black;
+}
+/* For effects */
+#typing{
+  max-width: max-content;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid;
+  animation: typing 3s steps(30) forwards, blinking 1s step-end infinite;
+}
+@keyframes typing{
+  from{
+    width:0 ;
+  }
+  to{
+    width: 100%;
+  }
+}
+@keyframes blinking{
+    50%{
+      border-color: transparent;
+    }
+}
+/* For colors */
+
+/* Extra Small Devices (Phones, <576px) */
+@media (max-width: 575px) {
+  p, a { font-size: 0.875rem; } /* 14px */
+  h1 { font-size: 1.75rem; } /* 28px */
+}
+
+/* Small Devices (Phones, ≥576px) */
+@media (min-width: 576px) {
+  p, a { font-size: 1rem; } /* 16px */
+  h1 { font-size: 2rem; } /* 32px */
+}
+
+/* Medium Devices (Tablets, ≥768px) */
+@media (min-width: 768px) {
+  p, a { font-size: 1.125rem; } /* 18px */
+  h1 { font-size: 2.5rem; } /* 40px */
+}
+
+/* Large Devices (Laptops, ≥992px) */
+@media (min-width: 992px) {
+  p, a { font-size: 1.25rem; } /* 20px */
+  h1 { font-size: 3rem; } /* 48px */
+}
+
+/* Extra Large Devices (Desktops, ≥1200px) */
+@media (min-width: 1200px) {
+  p, a { font-size: 1.75rem; } /* 22px */
+  h1 { font-size: 3.5rem; } /* 56px */
+}
