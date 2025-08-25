@@ -244,6 +244,42 @@ function handleFormSubmission() {
     }, 2000);
 }
 
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    const firstName = document.getElementById('firstName').value;
+    const lastName = document.getElementById('lastName').value;
+    const email = document.getElementById('email').value;
+    const phone = document.getElementById('phone').value;
+    const message = document.getElementById('message').value;
+
+    const telegramMessage = 
+        `New Contact Form Submission:\n` +
+        `Name: ${firstName} ${lastName}\n` +
+        `Email: ${email}\n` +
+        `Phone: ${phone}\n` +
+        `Message: ${message}`;
+
+    const botToken = '8098091330:AAGlqw0b7Xql5qiVxKlO2UcQgcAyEAG500w';
+    const chatId = '7772979858';
+
+    fetch(`https://api.telegram.org/bot${botToken}/sendMessage`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+            chat_id: chatId,
+            text: telegramMessage
+        })
+    })
+    .then(response => response.json())
+    .then(data => {
+        alert('Message sent to Telegram!');
+    })
+    .catch(error => {
+        alert('Failed to send message.');
+    });
+});
+
 function showNotification(message, type = 'success') {
     const notification = document.createElement('div');
     notification.className = `notification notification-${type}`;
@@ -553,4 +589,6 @@ function initializeFloatingThemeToggle() {
     // Add scroll listener
     window.addEventListener('scroll', handleScroll);
     handleScroll(); // Initial check
+    
 }
+
