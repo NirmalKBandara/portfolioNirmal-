@@ -410,7 +410,7 @@ function animateCounter(stat) {
 function downloadCV() {
     // Create a temporary link for CV download
     const link = document.createElement('a');
-    link.href = 'path/to/your/cv.pdf'; // Replace with actual CV path
+    link.href = 'https://github.com/NirmalKBandara/portfolioNirmal-/blob/main/230081DCV.pdf'; // Replace with actual CV path
     link.download = 'Nirmal_Bandara_CV.pdf';
     document.body.appendChild(link);
     link.click();
