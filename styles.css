@@ -47,7 +47,7 @@ html {
     --text-secondary: #a1a1aa;
     --text-muted: #71717a;
     --border-color: #1f1f23;
-    --card-bg: #0f0f0f;
+    --card-bg: #20201c;
     --nav-bg: rgba(0, 0, 0, 0.95);
     --hero-bg: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
     --accent-primary: #3b82f6;
@@ -262,6 +262,11 @@ html {
 }
 
 .hero-text {
+    /* border: #000000 1px solid; */
+    border: 4px solid var(--card-bg);
+    border-radius: 30px;
+    backdrop-filter: blur(10px);
+    padding: 5%;
     animation: slideInLeft 1s ease-out;
 }
 
