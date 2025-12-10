@@ -3,17 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nirmal Bandara - Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>Nirmal Bandara - Computer Science Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Navigation -->
+    <canvas id="hero-canvas"></canvas>
+
     <nav class="navbar" id="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <h2>Nirmal Bandara</h2>
+                <h2>&lt;Nirmal /&gt;</h2>
             </div>
             <div class="nav-menu" id="nav-menu">
                 <a href="#home" class="nav-link">Home</a>
@@ -30,55 +34,76 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-container">
             <div class="cyber-elements">
-                <div class="cyber-element" style="left: 10%; animation-delay: -2s;">🔒</div>
-                <div class="cyber-element" style="left: 20%; animation-delay: -5s;">🛡️</div>
-                <div class="cyber-element" style="left: 70%; animation-delay: -8s;">🔐</div>
-                <div class="cyber-element" style="left: 85%; animation-delay: -12s;">⚡</div>
+                <div class="cyber-element" style="left: 10%; top: 20%; animation-delay: -2s;"><i class="fas fa-shield-alt"></i></div>
+                <div class="cyber-element" style="left: 85%; top: 15%; animation-delay: -5s;"><i class="fas fa-code"></i></div>
+                <div class="cyber-element" style="left: 75%; top: 75%; animation-delay: -8s;"><i class="fas fa-network-wired"></i></div>
+                <div class="cyber-element" style="left: 15%; top: 80%; animation-delay: -12s;"><i class="fas fa-lock"></i></div>
             </div>
+            
             <div class="hero-content">
                 <div class="hero-text">
                     <h1 class="hero-title">
                         <span class="greeting">Hello, I'm</span>
                         <span class="name" id="typing-name">Nirmal Bandara</span>
                     </h1>
-                    <p class="hero-subtitle">Computer Science Undergraduate</p>
-                    <p class="hero-description">
-                    --> I am passionate about Cybersecurity Engineering, Web Development, and Coding. <br>
-                    --> Currently, I am pursuing a degree in Computer Science and Engineering at the University of Moratuwa, 
-                        where I strive to explore the intersection of technology and security. <br>
-                    --> Alongside my academic journey, I also work as a tutor, conducting Advanced Level Mathematics classes. <br>
-                    --> Furthermore, I have a strong interest in emerging technologies and enjoy keeping up with the latest innovations in the tech world.
-                    </p>
+                    <p class="hero-subtitle">Computer Science Undergraduate & Security Enthusiast</p>
+                    
+                    <div class="hero-description-list">
+                        <div class="list-item">
+                            <i class="fas fa-chevron-right accent-icon"></i>
+                            <p>Passionate about Cybersecurity Engineering, Web Development, and Algorithm Design.</p>
+                        </div>
+                        <div class="list-item">
+                            <i class="fas fa-chevron-right accent-icon"></i>
+                            <p>Pursuing Computer Science & Engineering at the University of Moratuwa.</p>
+                        </div>
+                        <div class="list-item">
+                            <i class="fas fa-chevron-right accent-icon"></i>
+                            <p>Advanced Level Mathematics Tutor & Educator.</p>
+                        </div>
+                        <div class="list-item">
+                            <i class="fas fa-chevron-right accent-icon"></i>
+                            <p>Explorer of emerging tech and secure system architecture.</p>
+                        </div>
+                    </div>
+
                     <div class="hero-buttons">
                         <button class="btn btn-primary" onclick="scrollToSection('contact')">
-                            <i class="fas fa-envelope"></i>
+                            <i class="fas fa-paper-plane"></i>
                             Get In Touch
                         </button>
                         <button class="btn btn-secondary" onclick="downloadCV()">
-                            <i class="fas fa-download"></i>
+                            <i class="fas fa-file-alt"></i>
                             Download CV
                         </button>
                     </div>
                 </div>
+                
                 <div class="hero-image">
                     <div class="image-container">
                         <div class="floating-elements">
-                            <div class="float-element code">Cyber</div>
+                            <div class="float-card code-card">
+                                <i class="fas fa-terminal"></i>
+                                <span>Developer</span>
+                            </div>
                             <div class="float-element theme-toggle" id="themeToggle">
                                 <i class="fas fa-sun" id="themeIcon"></i>
                             </div>
-                            <div class="float-element web">Tutor</div>
-                    </div>
+                            <div class="float-card math-card">
+                                <i class="fas fa-square-root-alt"></i>
+                                <span>Tutor</span>
+                            </div>
+                        </div>
                         <div class="profile-image">
-                        <img src="https://avatars.githubusercontent.com/u/191226985?v=4" alt="Your Profile">
+                            <img src="https://avatars.githubusercontent.com/u/191226985?v=4" alt="Nirmal Bandara">
                         </div>
                     </div>
                 </div>
             </div>
+            
             <div class="scroll-indicator">
                 <div class="mouse">
                     <div class="wheel"></div>
@@ -88,51 +113,51 @@
         </div>
     </section>
 
-    <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">About Me</h2>
-                <p class="section-subtitle">Get to know me better</p>
+                <div class="title-bar"></div>
+                <p class="section-subtitle">My academic and professional journey</p>
             </div>
             <div class="about-content">
-                <div class="about-image">
+                <div class="about-image tilt-element">
                     <div class="image-wrapper">
                         <img src="https://avatars.githubusercontent.com/u/191226985?v=4" alt="Nirmal Bandara">
                         <div class="experience-badge">
                             <span class="number">2nd</span>
-                            <span class="text">Year undergraduate</span>
+                            <span class="text">Year Undergraduate</span>
                         </div>
                     </div>
                 </div>
                 <div class="about-text">
-                <h3>Hey there, I’m Nimral K. Bandara</h3>
-                <p>
-                    I’m an undergraduate in <strong>Computer Science and Engineering</strong> at the 
-                    <strong>University of Moratuwa</strong>, driven by a passion for technology, cybersecurity, 
-                    and Mathematics. What began as curiosity in Mathematics and programming  has grown into a strong 
-                    foundation across multiple domains.
-                </p>
-                <p>
-                    My interests span <strong>cybersecurity engineering, web development, Mathematics</strong>. I enjoy solving complex problems, building impactful solutions, 
-                    and continuously exploring Mathematics. Beyond academics, I also share my 
-                    knowledge as a <strong>Mathematics tutor for Advanced Level students</strong>. <br>
-                    And also I am a Cat person =) ...
-                </p>
-                </div>
+                    <h3>Nirmal K. Bandara</h3>
+                    <p>
+                        I am an undergraduate in <strong>Computer Science and Engineering</strong> at the 
+                        <strong>University of Moratuwa</strong>. My journey began with a deep curiosity for Mathematics 
+                        and logic, which naturally evolved into a passion for software engineering and cybersecurity.
+                    </p>
+                    <p>
+                        My technical focus spans <strong>secure system design, full-stack web development, and mathematical modeling</strong>. 
+                        I enjoy deconstructing complex problems to build efficient, scalable solutions. Beyond my own studies, 
+                        I am committed to education, actively mentoring students in Advanced Level Mathematics.
+                    </p>
+                    <p>
+                        When I'm not coding or teaching, I enjoy strategic gaming and exploring new technological frameworks.
+                    </p>
 
                     <div class="about-stats">
                         <div class="stat">
                             <span class="stat-number">5+</span>
-                            <span class="stat-label">Projects</span>
+                            <span class="stat-label">Projects Completed</span>
                         </div>
                         <div class="stat">
                             <span class="stat-number">10+</span>
-                            <span class="stat-label">Tech stack</span>
+                            <span class="stat-label">Technologies</span>
                         </div>
                         <div class="stat">
-                            <span class="stat-number">10+</span>
-                            <span class="stat-label">collaborations</span>
+                            <span class="stat-number">2+</span>
+                            <span class="stat-label">Years Mentoring</span>
                         </div>
                     </div>
                 </div>
@@ -140,98 +165,73 @@
         </div>
     </section>
 
-    <!-- Skills Section -->
     <section id="skills" class="skills">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Skills & Expertise</h2>
-                <p class="section-subtitle">Technologies I work with</p>
+                <h2 class="section-title">Technical Expertise</h2>
+                <div class="title-bar"></div>
+                <p class="section-subtitle">Tools and technologies I leverage</p>
             </div>
             <div class="skills-container">
                 <div class="skill-category">
-                    <h3>Programming Languages</h3>
+                    <h3><i class="fas fa-code"></i> Languages & Core</h3>
                     <div class="skills-grid">
-                        <div class="skill-card">
-                            <div class="skill-icon">
-                                <i class="fab fa-java"></i>
-                            </div>
+                        <div class="skill-card tilt-element">
+                            <div class="skill-icon"><i class="fab fa-java"></i></div>
                             <h4>Java</h4>
-                            <p>enterprise applications <br> Object-oriented programming </p>
+                            <p>Enterprise Applications, OOP</p>
                         </div>
-                        <div class="skill-card">
-                            <div class="skill-icon">
-                                <i class="fab fa-python"></i>
-                            </div>
+                        <div class="skill-card tilt-element">
+                            <div class="skill-icon"><i class="fab fa-python"></i></div>
                             <h4>Python</h4>
-                            <p>Data analysis <br> Machine learning <br> Encoding & Decoding</p>
+                            <p>Data Analysis, Scripting, AI</p>
                         </div>
-                        <div class="skill-card">
-                            <div class="skill-icon">
-                                <i class="fas fa-code"></i>
-                            </div>
+                        <div class="skill-card tilt-element">
+                            <div class="skill-icon"><i class="fas fa-microchip"></i></div>
                             <h4>C/C++</h4>
-                            <p>OS programming <br> Network programming <br> algorithm implementation</p>
+                            <p>Systems Programming, Algorithms</p>
                         </div>
-                        <div class="skill-card">
-                            <div class="skill-icon">
-                                <i class="fas fa-cogs"></i>
-                            </div>
+                        <div class="skill-card tilt-element">
+                            <div class="skill-icon"><i class="fab fa-linux"></i></div>
                             <h4>Linux</h4>
-                            <p>kernel modules <br> Linux system programming </p>
+                            <p>Kernel Modules, Shell Scripting</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="skill-category">
-                    <h3>Web Development</h3>
+                    <h3><i class="fas fa-globe"></i> Web Technologies</h3>
                     <div class="skills-grid">
-                        <div class="skill-card">
-                            <div class="skill-icon">
-                                <i class="fab fa-html5"></i>
-                            </div>
-                            <h4>HTML/CSS</h4>
-                            <p>Responsive design, modern CSS features, semantic markup</p>
+                        <div class="skill-card tilt-element">
+                            <div class="skill-icon"><i class="fab fa-html5"></i></div>
+                            <h4>HTML5 / CSS3</h4>
+                            <p>Modern Layouts, Responsive Design</p>
                         </div>
-                        <div class="skill-card">
-                            <div class="skill-icon">
-                                <i class="fab fa-js-square"></i>
-                            </div>
+                        <div class="skill-card tilt-element">
+                            <div class="skill-icon"><i class="fab fa-js"></i></div>
                             <h4>JavaScript</h4>
-                            <p>ES6+, DOM manipulation, asynchronous programming</p>
+                            <p>ES6+, DOM, Async Patterns</p>
                         </div>
-                        <div class="skill-card">
-                            <div class="skill-icon">
-                                <i class="fab fa-php"></i>
-                            </div>
+                        <div class="skill-card tilt-element">
+                            <div class="skill-icon"><i class="fab fa-php"></i></div>
                             <h4>PHP</h4>
-                            <p>Server-side development, API creation, database integration</p>
+                            <p>Backend Logic, API Development</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="skill-category">
-                    <h3>Database & Tools</h3>
+                    <h3><i class="fas fa-database"></i> Data & Tools</h3>
                     <div class="skills-grid">
-                        <div class="skill-card">
-                            <div class="skill-icon">
-                                <i class="fas fa-database"></i>
-                            </div>
+                        <div class="skill-card tilt-element">
+                            <div class="skill-icon"><i class="fas fa-server"></i></div>
                             <h4>MySQL</h4>
-                            <p>Database design, optimization, complex queries</p>
+                            <p>Relational Design, Query Optimization</p>
                         </div>
-                        <!-- <div class="skill-card">
-                            <div class="skill-icon">
-                                <i class="fas fa-leaf"></i>
-                            </div>
-                            <h4>MongoDB</h4>
-                            <p>NoSQL database, document-based storage, aggregation</p>
-                        </div> -->
-                        <div class="skill-card">
-                            <div class="skill-icon">
-                                <i class="fas fa-chalkboard-teacher"></i>
-                            </div>
-                            <h4>Teaching</h4>
-                            <p>Mathematics tutoring <br> </p>
+                        <div class="skill-card tilt-element">
+                            <div class="skill-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+                            <h4>Education</h4>
+                            <p>Mathematics Instruction & Mentorship</p>
                         </div>
                     </div>
                 </div>
@@ -239,155 +239,146 @@
         </div>
     </section>
 
-    <!-- Projects Section -->
     <section id="projects" class="projects">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Projects I did</h2>
-                <p class="section-subtitle">Here’s a showcase of the projects I have completed so far. <br> Both Academic & Personal Projects.</p>
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="title-bar"></div>
+                <p class="section-subtitle">A selection of my academic and personal work</p>
             </div>
             <div class="projects-grid">
-                <div class="project-card">
+                
+                <div class="project-card tilt-element">
                     <div class="project-image">
-                        <img src="https://i.ytimg.com/vi/JcgnDpaMSOo/hqdefault.jpg" alt="Project 1">
+                        <img src="https://i.ytimg.com/vi/JcgnDpaMSOo/hqdefault.jpg" alt="Mathematics Channel">
                         <div class="project-overlay">
                             <div class="project-links">
-                                <!-- <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a> -->
-                                <a href="https://youtube.com/@mrnirmalkbandara?si=kz94o7g-goONmJAp" class="project-link"><i class="fab fa-youtube"></i></a>
+                                <a href="https://youtube.com/@mrnirmalkbandara" target="_blank" class="project-link" aria-label="View on YouTube">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
                             </div>
                         </div>
                     </div>
                     <div class="project-content">
-                        <h3>Mathematic Channel</h3>
+                        <h3>Mathematics Educational Platform</h3>
                         <p>
-                        I have created a YouTube channel to share my knowledge of Mathematics with a wider audience. <br>
-                        As a contribution to my country’s education system, I focus on discussing and solving past papers 
-                        from the Advanced Level Combined Mathematics subject.
+                            A YouTube-based educational initiative focused on Advanced Level Combined Mathematics. 
+                            I analyze and solve complex past paper problems to aid students in the national curriculum.
                         </p>
                         <div class="project-tech">
+                            <span class="tech-tag">Education</span>
                             <span class="tech-tag">Mathematics</span>
-                            <span class="tech-tag">Teaching</span>
-                            <span class="tech-tag">AL</span>
-                            <span class="tech-tag">YouTube</span>
+                            <span class="tech-tag">Content Creation</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="project-card">
+                <div class="project-card tilt-element">
                     <div class="project-image">
-                        <img src="https://media.istockphoto.com/id/640086170/photo/portfolio-letterpress-type.jpg?s=612x612&w=0&k=20&c=3ySNlkqdbecxMZm99rm5WGMC-d6uYy41CPGND_77DvQ=" alt="Project 2">
+                        <img src="https://media.istockphoto.com/id/640086170/photo/portfolio-letterpress-type.jpg?s=612x612&w=0&k=20&c=3ySNlkqdbecxMZm99rm5WGMC-d6uYy41CPGND_77DvQ=" alt="Portfolio Website">
                         <div class="project-overlay">
                             <div class="project-links">
-                                <!-- <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a> -->
-                                <a href="https://github.com/NirmalKBandara/portfolioNirmal-" class="project-link"><i class="fab fa-github"></i></a>
+                                <a href="https://github.com/NirmalKBandara/portfolioNirmal-" target="_blank" class="project-link" aria-label="View Code">
+                                    <i class="fab fa-github"></i>
+                                </a>
                             </div>
                         </div>
                     </div>
                     <div class="project-content">
-                        <h3>Portfolio Website</h3>
+                        <h3>Professional Portfolio</h3>
                         <p>
-                        I developed this as a personal project using plain HTML, CSS, and JavaScript.  <br>
-                        My initial goal was to practice and improve my web development skills.  <br>
-                        However, as the project progressed, I realized it could also serve as a platform <br> 
-                        to showcase my work and introduce who I am.
+                            A responsive, personal brand website built to showcase skills and projects. 
+                            Features include dark/light mode, interactive animations, and a contact system.
                         </p>
                         <div class="project-tech">
-                            <span class="tech-tag">HTML</span>
-                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
                             <span class="tech-tag">JavaScript</span>
-                            <span class="tech-tag">AI</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="project-card">
+                <div class="project-card tilt-element">
                     <div class="project-image">
-                        <img src="https://github.com/NirmalKBandara/portfolioNirmal-/blob/main/HomeImages/NanoP.png?raw=false" alt="Project 3">
+                        <img src="https://github.com/NirmalKBandara/portfolioNirmal-/blob/main/HomeImages/NanoP.png?raw=false" alt="Nano Processor">
                         <div class="project-overlay">
                             <div class="project-links">
-                                <!-- <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a> -->
-                                <a href="https://github.com/NirmalKBandara/microProcessorDesign" class="project-link"><i class="fab fa-github"></i></a>
+                                <a href="https://github.com/NirmalKBandara/microProcessorDesign" target="_blank" class="project-link" aria-label="View Code">
+                                    <i class="fab fa-github"></i>
+                                </a>
                             </div>
                         </div>
                     </div>
                     <div class="project-content">
-                        <h3>Nano Processor</h3>
-                           <p>
-                            This was the first hardware design project I worked on. <br>
-                            Together with three of my friends, I developed it as a way to learn VHDL. <br>
-                            We also received academic credit for this project during our second semester. <br>
-                            The knowledge required to complete it was gained through the lectures we attended. <br>
-                            The project took approximately one month to complete.
-                            </p>
+                        <h3>8-Bit Nano Processor</h3>
+                        <p>
+                            A hardware design project implementing a functional 8-bit microprocessor using VHDL. 
+                            Developed as a team effort to understand computer architecture fundamentals.
+                        </p>
                         <div class="project-tech">
                             <span class="tech-tag">VHDL</span>
-                            <span class="tech-tag">CS1050</span>
-                            <span class="tech-tag">UOM</span>
-                            <span class="tech-tag">TeamWork</span>
+                            <span class="tech-tag">Computer Arch</span>
+                            <span class="tech-tag">Hardware Design</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="project-card">
+                <div class="project-card tilt-element">
                     <div class="project-image">
-                        <img src="https://github.com/NirmalKBandara/hotelWebProject/blob/main/OceanLineHotel.png?raw=true" alt="Project 4">
+                        <img src="https://github.com/NirmalKBandara/hotelWebProject/blob/main/OceanLineHotel.png?raw=true" alt="Ocean Line Hotel">
                         <div class="project-overlay">
                             <div class="project-links">
-                                <!-- <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a> -->
-                                <a href="https://github.com/NirmalKBandara/hotelWebProject" class="project-link"><i class="fab fa-github"></i></a>
+                                <a href="https://github.com/NirmalKBandara/hotelWebProject" target="_blank" class="project-link" aria-label="View Code">
+                                    <i class="fab fa-github"></i>
+                                </a>
                             </div>
                         </div>
                     </div>
                     <div class="project-content">
-                        <h3>Ocean Line Hotel</h3>
-                            <p>
-                            This was the first web project I ever worked on. <br> 
-                            Together with three of my friends, we developed it as a way to learn the web technologies. <br> 
-                            We utilized resources from the internet and YouTube.<br>
-                            The project took one week to complete, we learned, and applied as much as we could.
-                            </p>
+                        <h3>Ocean Line Hotel System</h3>
+                        <p>
+                            A web-based hotel management interface. This project served as an introduction to 
+                            full-stack web technologies and collaborative development workflows.
+                        </p>
                         <div class="project-tech">
-                            <span class="tech-tag">HTML</span>
-                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">HTML/CSS</span>
                             <span class="tech-tag">JavaScript</span>
-                            <span class="tech-tag">TeamWork</span>
+                            <span class="tech-tag">Web Design</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="project-card">
+                <div class="project-card tilt-element upcoming-project">
                     <div class="project-image">
-                        <img src="https://media.istockphoto.com/id/1312051921/video/updating-progress-bar.jpg?s=640x640&k=20&c=bquMSavdFqnExcRXXhJ9hrWcyUkorxdtWR7FVIXAoco=" alt="Updating...">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
-                                <!-- <a href="#" class="project-link"><i class="fab fa-github"></i></a> -->
-                            </div>
+                        <div class="upcoming-placeholder">
+                            <i class="fas fa-sync fa-spin"></i>
                         </div>
                     </div>
                     <div class="project-content">
-                        <h3>Updating...</h3>
-                        <p> This project could be more interesting than the others, so... stay in touch.<br> Updating...</p>
+                        <h3>Development in Progress</h3>
+                        <p>Currently working on an advanced security tool. Details will be published upon completion.</p>
                         <div class="project-tech">
-                            <span class="tech-tag">Updating...</span>
+                            <span class="tech-tag">Cybersecurity</span>
+                            <span class="tech-tag">Research</span>
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">Get In Touch</h2>
-                <p class="section-subtitle">Let's work together</p>
+                <div class="title-bar"></div>
+                <p class="section-subtitle">Available for collaborations and opportunities</p>
             </div>
             <div class="contact-content">
                 <div class="contact-info">
-                    <h3>Let's discuss your project</h3>
-                    <p>I'm always interested in new opportunities and collaborations. Feel free to reach out if you'd like to work together!</p>
+                    <h3>Let's start a conversation</h3>
+                    <p>I'm interested in freelance opportunities, internships, and collaborative projects. However, if you have other requests or just want to say hi, my inbox is always open.</p>
                     
                     <div class="contact-items">
                         <div class="contact-item">
@@ -396,12 +387,12 @@
                             </div>
                             <div class="contact-details">
                                 <h4>Email</h4>
-                                <p><a href="https://mail.google.com/mail/?view=cm&fs=1&to=mrsanbandaraprofessional@gmail.com" target="_blank">Mail me</a></p>
+                                <p><a href="mailto:mrsanbandaraprofessional@gmail.com">mrsanbandaraprofessional@gmail.com</a></p>
                             </div>
                         </div>
                         <div class="contact-item">
                             <div class="contact-icon">
-                                <i class="fas fa-phone"></i>
+                                <i class="fas fa-phone-alt"></i>
                             </div>
                             <div class="contact-details">
                                 <h4>Phone</h4>
@@ -420,16 +411,16 @@
                     </div>
 
                     <div class="social-links">
-                        <a href="https://www.linkedin.com/in/nirmal-bandara-4b8260341/" target="_blank" class="social-link">
-                            <i class="fab fa-linkedin"></i>
+                        <a href="https://www.linkedin.com/in/nirmal-bandara-4b8260341/" target="_blank" class="social-link" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
                         </a>
-                        <a href="https://github.com/NirmalKBandara?tab=overview&from=2025-08-01&to=2025-08-25" target="_blank" class="social-link">
+                        <a href="https://github.com/NirmalKBandara" target="_blank" class="social-link" aria-label="GitHub">
                             <i class="fab fa-github"></i>
                         </a>
-                        <a href="https://wa.me/+94702614618" target="_blank" class="social-link">
+                        <a href="https://wa.me/+94702614618" target="_blank" class="social-link" aria-label="WhatsApp">
                             <i class="fab fa-whatsapp"></i>
                         </a>
-                        <a href="https://youtube.com/@mrnirmalkbandara?si=kz94o7g-goONmJAp" target="_blank" class="social-link">
+                        <a href="https://youtube.com/@mrnirmalkbandara" target="_blank" class="social-link" aria-label="YouTube">
                             <i class="fab fa-youtube"></i>
                         </a>
                     </div>
@@ -439,30 +430,24 @@
                     <div class="form-group">
                         <div class="form-row">
                             <div class="form-field">
-                                <input type="text" id="firstName" name="firstName" required>
+                                <input type="text" id="firstName" name="firstName" required placeholder=" ">
                                 <label for="firstName">First Name</label>
                             </div>
                             <div class="form-field">
-                                <input type="text" id="lastName" name="lastName" required>
+                                <input type="text" id="lastName" name="lastName" required placeholder=" ">
                                 <label for="lastName">Last Name</label>
                             </div>
                         </div>
                     </div>
                     <div class="form-group">
                         <div class="form-field">
-                            <input type="email" id="email" name="email" required>
+                            <input type="email" id="email" name="email" required placeholder=" ">
                             <label for="email">Email Address</label>
                         </div>
                     </div>
                     <div class="form-group">
                         <div class="form-field">
-                            <input type="tel" id="phone" name="phone">
-                            <label for="phone">Phone Number</label>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="form-field">
-                            <textarea id="message" name="message" rows="5" required></textarea>
+                            <textarea id="message" name="message" rows="5" required placeholder=" "></textarea>
                             <label for="message">Your Message</label>
                         </div>
                     </div>
@@ -475,12 +460,11 @@
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <p>&copy; 2025 Nirmal K. Bandara. <br> All rights reserved. <br>
-                Designed & Developed with <i class="fas fa-heart"></i></p>
+                <p>&copy; 2025 Nirmal K. Bandara. All rights reserved.</p>
+                <p class="footer-small">Designed & Developed with precision.</p>
             </div>
         </div>
     </footer>
