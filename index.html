@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nirmal Bandara - Computer Science Portfolio</title>
+    <title>Nirmal Bandara - Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
@@ -19,17 +19,22 @@
             <div class="nav-logo">
                 <h2>&lt;Nirmal /&gt;</h2>
             </div>
-            <div class="nav-menu" id="nav-menu">
-                <a href="#home" class="nav-link">Home</a>
-                <a href="#about" class="nav-link">About</a>
-                <a href="#skills" class="nav-link">Skills</a>
-                <a href="#projects" class="nav-link">Projects</a>
-                <a href="#contact" class="nav-link">Contact</a>
-            </div>
-            <div class="nav-toggle" id="nav-toggle">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+            <div class="nav-right">
+                <div class="nav-menu" id="nav-menu">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#skills" class="nav-link">Skills</a>
+                    <a href="#projects" class="nav-link">Projects</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </div>
+                <button id="theme-toggle-nav" class="nav-theme-btn" aria-label="Toggle Theme">
+                    <i class="fas fa-sun" id="themeIcon"></i>
+                </button>
+                <div class="nav-toggle" id="nav-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
             </div>
         </div>
     </nav>
@@ -44,39 +49,35 @@
             </div>
             
             <div class="hero-content">
-                <div class="hero-text">
+                <div class="hero-text card-style">
                     <h1 class="hero-title">
                         <span class="greeting">Hello, I'm</span>
-                        <span class="name" id="typing-name">Nirmal Bandara</span>
+                        <span class="name" id="typing-name"></span><span class="cursor">|</span>
                     </h1>
-                    <p class="hero-subtitle">Computer Science Undergraduate & Security Enthusiast</p>
+                    <p class="hero-subtitle">Computer Science Undergraduate</p>
                     
                     <div class="hero-description-list">
                         <div class="list-item">
-                            <i class="fas fa-chevron-right accent-icon"></i>
-                            <p>Passionate about Cybersecurity Engineering, Web Development, and Algorithm Design.</p>
+                            <i class="fas fa-terminal accent-icon"></i>
+                            <p>Passionate about Cybersecurity, Web Dev, and Algorithms.</p>
                         </div>
                         <div class="list-item">
-                            <i class="fas fa-chevron-right accent-icon"></i>
-                            <p>Pursuing Computer Science & Engineering at the University of Moratuwa.</p>
+                            <i class="fas fa-terminal accent-icon"></i>
+                            <p>CS & Engineering Undergraduate @ UOM.</p>
                         </div>
                         <div class="list-item">
-                            <i class="fas fa-chevron-right accent-icon"></i>
-                            <p>Advanced Level Mathematics Tutor & Educator.</p>
-                        </div>
-                        <div class="list-item">
-                            <i class="fas fa-chevron-right accent-icon"></i>
-                            <p>Explorer of emerging tech and secure system architecture.</p>
+                            <i class="fas fa-terminal accent-icon"></i>
+                            <p>Advanced Level Mathematics Tutor.</p>
                         </div>
                     </div>
 
                     <div class="hero-buttons">
                         <button class="btn btn-primary" onclick="scrollToSection('contact')">
-                            <i class="fas fa-paper-plane"></i>
+                            <i class="fas fa-terminal"></i>
                             Get In Touch
                         </button>
                         <button class="btn btn-secondary" onclick="downloadCV()">
-                            <i class="fas fa-file-alt"></i>
+                            <i class="fas fa-download"></i>
                             Download CV
                         </button>
                     </div>
@@ -86,11 +87,8 @@
                     <div class="image-container">
                         <div class="floating-elements">
                             <div class="float-card code-card">
-                                <i class="fas fa-terminal"></i>
-                                <span>Developer</span>
-                            </div>
-                            <div class="float-element theme-toggle" id="themeToggle">
-                                <i class="fas fa-sun" id="themeIcon"></i>
+                                <i class="fas fa-code"></i>
+                                <span>Dev</span>
                             </div>
                             <div class="float-card math-card">
                                 <i class="fas fa-square-root-alt"></i>
@@ -104,60 +102,53 @@
                 </div>
             </div>
             
-            <div class="scroll-indicator">
-                <div class="mouse">
-                    <div class="wheel"></div>
-                </div>
-                <span>Scroll Down</span>
             </div>
-        </div>
     </section>
 
     <section id="about" class="about">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">About Me</h2>
+                <h2 class="section-title">About_Me</h2>
                 <div class="title-bar"></div>
-                <p class="section-subtitle">My academic and professional journey</p>
+                <p class="section-subtitle">./profile --verbose</p>
             </div>
             <div class="about-content">
                 <div class="about-image tilt-element">
                     <div class="image-wrapper">
                         <img src="https://avatars.githubusercontent.com/u/191226985?v=4" alt="Nirmal Bandara">
-                        <div class="experience-badge">
+                        <div class="experience-badge glassy-badge">
                             <span class="number">2nd</span>
                             <span class="text">Year Undergraduate</span>
                         </div>
                     </div>
                 </div>
-                <div class="about-text">
+                <div class="about-text card-style">
                     <h3>Nirmal K. Bandara</h3>
                     <p>
-                        I am an undergraduate in <strong>Computer Science and Engineering</strong> at the 
-                        <strong>University of Moratuwa</strong>. My journey began with a deep curiosity for Mathematics 
-                        and logic, which naturally evolved into a passion for software engineering and cybersecurity.
+                        > Undergraduate in <strong>Computer Science & Engineering</strong> at 
+                        <strong>University of Moratuwa</strong>.
                     </p>
                     <p>
-                        My technical focus spans <strong>secure system design, full-stack web development, and mathematical modeling</strong>. 
-                        I enjoy deconstructing complex problems to build efficient, scalable solutions. Beyond my own studies, 
-                        I am committed to education, actively mentoring students in Advanced Level Mathematics.
+                        > My focus spans cybersecurity, full-stack development, and mathematics. 
+                        I enjoy deconstructing complex systems and building efficient solutions. 
+                        Beyond academics, I mentor students in Advanced Level Mathematics.
                     </p>
                     <p>
-                        When I'm not coding or teaching, I enjoy strategic gaming and exploring new technological frameworks.
+                        > echo "Always learning, always coding."
                     </p>
 
                     <div class="about-stats">
                         <div class="stat">
-                            <span class="stat-number">5+</span>
-                            <span class="stat-label">Projects Completed</span>
+                            <span class="stat-number">05+</span>
+                            <span class="stat-label">Projects</span>
                         </div>
                         <div class="stat">
                             <span class="stat-number">10+</span>
-                            <span class="stat-label">Technologies</span>
+                            <span class="stat-label">Stack</span>
                         </div>
                         <div class="stat">
-                            <span class="stat-number">2+</span>
-                            <span class="stat-label">Years Mentoring</span>
+                            <span class="stat-number">02+</span>
+                            <span class="stat-label">Years Exp</span>
                         </div>
                     </div>
                 </div>
@@ -168,70 +159,70 @@
     <section id="skills" class="skills">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Technical Expertise</h2>
+                <h2 class="section-title">Skills_&_Stack</h2>
                 <div class="title-bar"></div>
-                <p class="section-subtitle">Tools and technologies I leverage</p>
+                <p class="section-subtitle">./skills --list</p>
             </div>
             <div class="skills-container">
                 <div class="skill-category">
-                    <h3><i class="fas fa-code"></i> Languages & Core</h3>
+                    <h3>// Languages & Core</h3>
                     <div class="skills-grid">
                         <div class="skill-card tilt-element">
                             <div class="skill-icon"><i class="fab fa-java"></i></div>
                             <h4>Java</h4>
-                            <p>Enterprise Applications, OOP</p>
+                            <p>OOP, Enterprise Apps</p>
                         </div>
                         <div class="skill-card tilt-element">
                             <div class="skill-icon"><i class="fab fa-python"></i></div>
                             <h4>Python</h4>
-                            <p>Data Analysis, Scripting, AI</p>
+                            <p>Scripting, Data, AI</p>
                         </div>
                         <div class="skill-card tilt-element">
                             <div class="skill-icon"><i class="fas fa-microchip"></i></div>
                             <h4>C/C++</h4>
-                            <p>Systems Programming, Algorithms</p>
+                            <p>Systems, Algos</p>
                         </div>
                         <div class="skill-card tilt-element">
                             <div class="skill-icon"><i class="fab fa-linux"></i></div>
                             <h4>Linux</h4>
-                            <p>Kernel Modules, Shell Scripting</p>
+                            <p>Shell, Kernel</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="skill-category">
-                    <h3><i class="fas fa-globe"></i> Web Technologies</h3>
+                    <h3>// Web Technologies</h3>
                     <div class="skills-grid">
                         <div class="skill-card tilt-element">
                             <div class="skill-icon"><i class="fab fa-html5"></i></div>
-                            <h4>HTML5 / CSS3</h4>
-                            <p>Modern Layouts, Responsive Design</p>
+                            <h4>HTML/CSS</h4>
+                            <p>Layout, Responsive</p>
                         </div>
                         <div class="skill-card tilt-element">
                             <div class="skill-icon"><i class="fab fa-js"></i></div>
                             <h4>JavaScript</h4>
-                            <p>ES6+, DOM, Async Patterns</p>
+                            <p>ES6+, DOM, Async</p>
                         </div>
                         <div class="skill-card tilt-element">
                             <div class="skill-icon"><i class="fab fa-php"></i></div>
                             <h4>PHP</h4>
-                            <p>Backend Logic, API Development</p>
+                            <p>Backend, APIs</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="skill-category">
-                    <h3><i class="fas fa-database"></i> Data & Tools</h3>
+                    <h3>// Data & Tools</h3>
                     <div class="skills-grid">
                         <div class="skill-card tilt-element">
-                            <div class="skill-icon"><i class="fas fa-server"></i></div>
+                            <div class="skill-icon"><i class="fas fa-database"></i></div>
                             <h4>MySQL</h4>
-                            <p>Relational Design, Query Optimization</p>
+                            <p>Relational DBs</p>
                         </div>
                         <div class="skill-card tilt-element">
                             <div class="skill-icon"><i class="fas fa-chalkboard-teacher"></i></div>
-                            <h4>Education</h4>
-                            <p>Mathematics Instruction & Mentorship</p>
+                            <h4>Teaching</h4>
+                            <p>Math Mentorship</p>
                         </div>
                     </div>
                 </div>
@@ -242,9 +233,9 @@
     <section id="projects" class="projects">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Featured Projects</h2>
+                <h2 class="section-title">Projects_Init</h2>
                 <div class="title-bar"></div>
-                <p class="section-subtitle">A selection of my academic and personal work</p>
+                <p class="section-subtitle">./display --all</p>
             </div>
             <div class="projects-grid">
                 
@@ -253,22 +244,20 @@
                         <img src="https://i.ytimg.com/vi/JcgnDpaMSOo/hqdefault.jpg" alt="Mathematics Channel">
                         <div class="project-overlay">
                             <div class="project-links">
-                                <a href="https://youtube.com/@mrnirmalkbandara" target="_blank" class="project-link" aria-label="View on YouTube">
+                                <a href="https://youtube.com/@mrnirmalkbandara" target="_blank" class="project-link">
                                     <i class="fab fa-youtube"></i>
                                 </a>
                             </div>
                         </div>
                     </div>
                     <div class="project-content">
-                        <h3>Mathematics Educational Platform</h3>
+                        <h3>Math_Platform</h3>
                         <p>
-                            A YouTube-based educational initiative focused on Advanced Level Combined Mathematics. 
-                            I analyze and solve complex past paper problems to aid students in the national curriculum.
+                            YouTube educational channel for A/L Combined Maths. Solving complex past papers and explaining concepts.
                         </p>
                         <div class="project-tech">
                             <span class="tech-tag">Education</span>
-                            <span class="tech-tag">Mathematics</span>
-                            <span class="tech-tag">Content Creation</span>
+                            <span class="tech-tag">Maths</span>
                         </div>
                     </div>
                 </div>
@@ -278,22 +267,21 @@
                         <img src="https://media.istockphoto.com/id/640086170/photo/portfolio-letterpress-type.jpg?s=612x612&w=0&k=20&c=3ySNlkqdbecxMZm99rm5WGMC-d6uYy41CPGND_77DvQ=" alt="Portfolio Website">
                         <div class="project-overlay">
                             <div class="project-links">
-                                <a href="https://github.com/NirmalKBandara/portfolioNirmal-" target="_blank" class="project-link" aria-label="View Code">
+                                <a href="https://github.com/NirmalKBandara/portfolioNirmal-" target="_blank" class="project-link">
                                     <i class="fab fa-github"></i>
                                 </a>
                             </div>
                         </div>
                     </div>
                     <div class="project-content">
-                        <h3>Professional Portfolio</h3>
+                        <h3>Portfolio_v1</h3>
                         <p>
-                            A responsive, personal brand website built to showcase skills and projects. 
-                            Features include dark/light mode, interactive animations, and a contact system.
+                            Personal portfolio website built from scratch. Features light/dark mode, animations, and interactive elements.
                         </p>
                         <div class="project-tech">
-                            <span class="tech-tag">HTML5</span>
-                            <span class="tech-tag">CSS3</span>
-                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JS</span>
                         </div>
                     </div>
                 </div>
@@ -303,22 +291,20 @@
                         <img src="https://github.com/NirmalKBandara/portfolioNirmal-/blob/main/HomeImages/NanoP.png?raw=false" alt="Nano Processor">
                         <div class="project-overlay">
                             <div class="project-links">
-                                <a href="https://github.com/NirmalKBandara/microProcessorDesign" target="_blank" class="project-link" aria-label="View Code">
+                                <a href="https://github.com/NirmalKBandara/microProcessorDesign" target="_blank" class="project-link">
                                     <i class="fab fa-github"></i>
                                 </a>
                             </div>
                         </div>
                     </div>
                     <div class="project-content">
-                        <h3>8-Bit Nano Processor</h3>
+                        <h3>Nano_Processor</h3>
                         <p>
-                            A hardware design project implementing a functional 8-bit microprocessor using VHDL. 
-                            Developed as a team effort to understand computer architecture fundamentals.
+                            8-bit microprocessor hardware design using VHDL. Group project covering architecture fundamentals.
                         </p>
                         <div class="project-tech">
                             <span class="tech-tag">VHDL</span>
-                            <span class="tech-tag">Computer Arch</span>
-                            <span class="tech-tag">Hardware Design</span>
+                            <span class="tech-tag">Hardware</span>
                         </div>
                     </div>
                 </div>
@@ -328,38 +314,35 @@
                         <img src="https://github.com/NirmalKBandara/hotelWebProject/blob/main/OceanLineHotel.png?raw=true" alt="Ocean Line Hotel">
                         <div class="project-overlay">
                             <div class="project-links">
-                                <a href="https://github.com/NirmalKBandara/hotelWebProject" target="_blank" class="project-link" aria-label="View Code">
+                                <a href="https://github.com/NirmalKBandara/hotelWebProject" target="_blank" class="project-link">
                                     <i class="fab fa-github"></i>
                                 </a>
                             </div>
                         </div>
                     </div>
                     <div class="project-content">
-                        <h3>Ocean Line Hotel System</h3>
+                        <h3>Hotel_System</h3>
                         <p>
-                            A web-based hotel management interface. This project served as an introduction to 
-                            full-stack web technologies and collaborative development workflows.
+                            Web-based hotel management interface. First steps into full-stack development and teamwork.
                         </p>
                         <div class="project-tech">
-                            <span class="tech-tag">HTML/CSS</span>
-                            <span class="tech-tag">JavaScript</span>
-                            <span class="tech-tag">Web Design</span>
+                            <span class="tech-tag">Web</span>
+                            <span class="tech-tag">JS</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="project-card tilt-element upcoming-project">
+                <div class="project-card tilt-element">
                     <div class="project-image">
                         <div class="upcoming-placeholder">
-                            <i class="fas fa-sync fa-spin"></i>
+                            <i class="fas fa-spinner fa-spin"></i>
                         </div>
                     </div>
                     <div class="project-content">
-                        <h3>Development in Progress</h3>
-                        <p>Currently working on an advanced security tool. Details will be published upon completion.</p>
+                        <h3>Updating...</h3>
+                        <p>Currently working on something exciting. Stay tuned.</p>
                         <div class="project-tech">
-                            <span class="tech-tag">Cybersecurity</span>
-                            <span class="tech-tag">Research</span>
+                            <span class="tech-tag">Loading</span>
                         </div>
                     </div>
                 </div>
@@ -371,14 +354,14 @@
     <section id="contact" class="contact">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Get In Touch</h2>
+                <h2 class="section-title">Connect</h2>
                 <div class="title-bar"></div>
-                <p class="section-subtitle">Available for collaborations and opportunities</p>
+                <p class="section-subtitle">./send_message</p>
             </div>
             <div class="contact-content">
-                <div class="contact-info">
-                    <h3>Let's start a conversation</h3>
-                    <p>I'm interested in freelance opportunities, internships, and collaborative projects. However, if you have other requests or just want to say hi, my inbox is always open.</p>
+                <div class="contact-info card-style">
+                    <h3>Let's Collaborate</h3>
+                    <p>Open for opportunities, discussions, or just a tech chat. Ping me!</p>
                     
                     <div class="contact-items">
                         <div class="contact-item">
@@ -411,18 +394,10 @@
                     </div>
 
                     <div class="social-links">
-                        <a href="https://www.linkedin.com/in/nirmal-bandara-4b8260341/" target="_blank" class="social-link" aria-label="LinkedIn">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                        <a href="https://github.com/NirmalKBandara" target="_blank" class="social-link" aria-label="GitHub">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="https://wa.me/+94702614618" target="_blank" class="social-link" aria-label="WhatsApp">
-                            <i class="fab fa-whatsapp"></i>
-                        </a>
-                        <a href="https://youtube.com/@mrnirmalkbandara" target="_blank" class="social-link" aria-label="YouTube">
-                            <i class="fab fa-youtube"></i>
-                        </a>
+                        <a href="https://www.linkedin.com/in/nirmal-bandara-4b8260341/" target="_blank" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/NirmalKBandara" target="_blank" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="https://wa.me/+94702614618" target="_blank" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://youtube.com/@mrnirmalkbandara" target="_blank" class="social-link"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
                 
@@ -448,12 +423,12 @@
                     <div class="form-group">
                         <div class="form-field">
                             <textarea id="message" name="message" rows="5" required placeholder=" "></textarea>
-                            <label for="message">Your Message</label>
+                            <label for="message">Message</label>
                         </div>
                     </div>
                     <button type="submit" class="btn btn-primary btn-full">
-                        <i class="fas fa-paper-plane"></i>
-                        Send Message
+                        <i class="fas fa-terminal"></i>
+                        Send >>
                     </button>
                 </form>
             </div>
@@ -463,8 +438,7 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <p>&copy; 2025 Nirmal K. Bandara. All rights reserved.</p>
-                <p class="footer-small">Designed & Developed with precision.</p>
+                <p>&copy; 2025 Nirmal K. Bandara. <br>System Status: Online</p>
             </div>
         </div>
     </footer>
