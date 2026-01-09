@@ -1,0 +1,125 @@
+*{
+  text-decoration: none;
+  outline: 1px solid hsla(0, 0%, 0%, 0);
+  margin: 0;
+  padding: 0;
+  font-family: monospace;
+  color: black;
+}
+body{
+  background-color: #e4e5e0;
+}
+.navbar{
+  display: flex;
+  align-items: center;
+  height: 10vh;
+  justify-content: space-evenly;
+}
+.navbar .sem{
+  position: relative;
+  left: -10%;
+  display: flex;
+  gap: 10%;
+}
+.semData{
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: 100vw;
+}
+.semData .modules{
+  display: flex;
+  justify-content:left;
+  padding-left: 2%;
+  align-items: center;
+  height: 10vh;
+  gap: 4%;
+}
+.semData .detail{
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
+.semData .detail .module{
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  h1{
+    display: flex;
+    align-items: last baseline;
+    padding-left: 2%;
+  }
+}
+.semData .detail .module .pdfs{
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
+.semData .detail .module .pdfs .row{
+  display: flex;
+  height: 15vh;
+  gap: 2%;
+
+}
+.semData .detail .module .pdfs .row #pdf{
+  width: 10%;
+  height: 100%;
+  background-image: url(Images/PDF.png);
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position: center;
+}
+.semData .detail .module .pdfs .row #name{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 15%;
+  height: 100%;
+  button{
+    border-radius: 100px;
+    width: 60%;
+    height: 30%;
+  }
+}
+.semData .detail .module .pdfs .row #contain{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  width: 25%;
+  height: 100%;
+}
+/* For effects */
+
+/* For colors */
+
+/* Extra Small Devices (Phones, <576px) */
+@media (max-width: 575px) {
+  p, a { font-size: 0.875rem; } /* 14px */
+  h1 { font-size: 1.75rem; } /* 28px */
+}
+
+/* Small Devices (Phones, ≥576px) */
+@media (min-width: 576px) {
+  p, a { font-size: 1rem; } /* 16px */
+  h1 { font-size: 2rem; } /* 32px */
+}
+
+/* Medium Devices (Tablets, ≥768px) */
+@media (min-width: 768px) {
+  p, a { font-size: 1.125rem; } /* 18px */
+  h1 { font-size: 2.5rem; } /* 40px */
+}
+
+/* Large Devices (Laptops, ≥992px) */
+@media (min-width: 992px) {
+  p, a { font-size: 1.25rem; } /* 20px */
+  h1 { font-size: 3rem; } /* 48px */
+}
+
+/* Extra Large Devices (Desktops, ≥1200px) */
+@media (min-width: 1200px) {
+  p, a { font-size: 1.755rem; } /* 22px */
+  h1 { font-size: 3.5rem; } /* 56px */
+}
